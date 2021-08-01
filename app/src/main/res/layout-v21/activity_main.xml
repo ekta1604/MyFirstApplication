@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:id="@+id/inner_relative"
+        android:background="@drawable/inner_bg">
+
+        <ImageView
+            android:layout_width="78dp"
+            android:layout_height="78dp"
+            android:id="@+id/img_logo"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="60dp"
+            android:src="@drawable/ic_logo" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/appname"
+            android:layout_below="@+id/img_logo"
+            android:layout_marginTop="60dp"
+            android:text="@string/login"
+            android:textStyle=""
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            android:layout_marginEnd="20dp"
+            android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edt_username"
+        android:layout_below="@+id/inner_relative"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/edp_bg"
+        android:padding="15dp"
+        android:elevation="10dp"
+        android:drawableLeft="@drawable/ic_baseline_email_24"
+        android:drawablePadding="10dp"
+        android:singleLine="true"
+        android:hint="@string/username"
+        android:inputType="textEmailAddress"
+        android:imeOptions="actionNext"
+        android:textColorHint="@color/black"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edt_password"
+        android:background="@drawable/edp_bg"
+        android:layout_below="@id/edt_username"
+        android:layout_marginTop="20dp"
+        android:layout_marginHorizontal="30dp"
+        android:padding="15dp"
+        android:elevation="10dp"
+        android:drawableLeft="@drawable/ic_baseline_vpn_key_24"
+        android:drawablePadding="10dp"
+        android:hint="@string/password"
+        android:inputType="textPassword"
+        android:imeOptions="actionDone"
+        android:singleLine="true"
+        android:textColorHint="#000" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_fp"
+        android:text="@string/forgot_password"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:layout_below="@+id/edt_password"
+        android:layout_marginTop="30dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="30dp" />
+
+    <android.widget.Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_login"
+        android:layout_below="@+id/tv_fp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/btn_bg"
+        android:layout_marginHorizontal="30dp"
+        android:text="Login"
+        android:textColor="#fff"/>
+    <android.widget.Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_next"
+        android:layout_below="@+id/btn_login"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/btn_bg"
+        android:layout_marginHorizontal="30dp"
+        android:text="Next"
+        android:textColor="@color/white"
+    />
+    <android.widget.Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_rtn"
+        android:layout_below="@+id/btn_next"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/btn_bg"
+        android:layout_marginHorizontal="30dp"
+        android:text="Ratings"
+        android:textColor="@color/white"/>
+
+    <RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:layout_marginBottom="40dp"
+    android:layout_alignParentBottom="true">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_ac"
+        android:textSize="18sp"
+        android:text="@string/don_t_have_an_account"
+        android:textColor="#000" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_regi"
+        android:text="@string/register"
+        android:textStyle="bold"
+        android:textColor="@color/purple_700"
+        android:textSize="20sp"
+        android:layout_toEndOf="@id/tv_ac" />
+</RelativeLayout>
+
+
+</RelativeLayout>
+
+
+
