@@ -9,10 +9,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.MyFirstApplication">
-        <activity android:name=".SeekRatingActivity"></activity>
+        <activity android:name=".SeekbarActivity"></activity>
+        <activity android:name=".SeekRatingActivity" />
         <activity android:name=".MainActivity" />
         <activity android:name=".HomeActivity" />
-        <activity android:name=".SeekbarActivity">
+        <activity android:name=".ActionActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
