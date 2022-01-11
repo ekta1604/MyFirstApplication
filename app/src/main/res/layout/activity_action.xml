@@ -20,4 +20,12 @@
         android:id="@+id/btn_custm_alertdialog"
         android:layout_marginTop="40dp"
         android:text="Custom Alert Dialog"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_custom_toast"
+        android:text="Custom Toast"
+        android:layout_marginTop="20dp"
+        android:background="#FF9800"/>
 </LinearLayout>

@@ -13,13 +13,26 @@ import android.widget.Toast;
 
 public class ActionActivity extends AppCompatActivity {
 
-    Button btnAlertDailog,btnCustomDialog;
+    Button btnAlertDailog,btnCustomDialog,btnCustomToast;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_action);
         btnAlertDailog=findViewById(R.id.btn_AlertDialog);
         btnCustomDialog=findViewById(R.id.btn_custm_alertdialog);
+        btnCustomToast=findViewById(R.id.btn_custom_toast);
+        btnCustomToast.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                LayoutInflater layoutInflater=getLayoutInflater();
+                View myview =layoutInflater.inflate(R.layout.raw_toast,null);
+
+                Toast toast=new Toast(ActionActivity.this);
+                toast.setView(myview);
+                toast.setDuration(Toast.LENGTH_SHORT);
+                toast.show();
+            }
+        });
         btnCustomDialog.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
